@@ -1,3 +1,6 @@
 [submodule "gazebo_ros_2Dmap_plugin"]
 	path = gazebo_ros_2Dmap_plugin
 	url = https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin
+[submodule "src/gazebo_ros_2Dmap_plugin"]
+	path = src/gazebo_ros_2Dmap_plugin
+	url = https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin
