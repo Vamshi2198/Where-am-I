@@ -4,3 +4,6 @@
 [submodule "src/gazebo_ros_2Dmap_plugin"]
 	path = src/gazebo_ros_2Dmap_plugin
 	url = https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin
+[submodule "src/teleop_twist_keyboard"]
+	path = src/teleop_twist_keyboard
+	url = https://github.com/ros-teleop/teleop_twist_keyboard
