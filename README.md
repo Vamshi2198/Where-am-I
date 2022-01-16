@@ -4,7 +4,7 @@
   <br>
 </h1>
   
-<h2 align="center">A mobile robot is localized using AMCL Agorithm</h2>
+<h2 align="center"> Find the location of a mobile robot using AMCL Agorithm</h2>
   
 <p align="center">
   <a href="https://www.udacity.com/robotics">
