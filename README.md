@@ -26,3 +26,12 @@
   <a href="#testing">Testing</a>
 </p>
 
+## Overview  
+This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation. ROSbot is localized using ROS AMCL (Adaptive Monte Carlo Localization) package inside a map in the simulation environment. The map is generated using [gazebo_ros_2Dmap_plugin](https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin/tree/0820610f46235cd7ce1458ea030ef83b1616da37). 
+There are two options to control the robot and see how it localizes in the simulation environment: 
+
+1. `2D Navigation Goal`:  
+* The first option would be sending a 2D Nav Goal from RViz. The move_base will try to navigate your robot based on the new observation and the odometry to perform the localization, you could also give the robot an initial position estimate on the map using 2D Pose Estimate.
+
+2. `teleop_node`:  
+* You can use teleop_twist_keyboard node to control ROSbot using the keyboard keys. 
