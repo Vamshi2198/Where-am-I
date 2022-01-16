@@ -63,3 +63,45 @@ sudo apt-get install ros-(distro)-amcl
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+
+## Directory Structure  
+```
+.Where-am-I                                    # Where am I Project
+├── catkin_ws                                  # Catkin workspace
+│   ├── src
+│   │   ├── aws-robomaker-small-house-world    # package that contains small house world
+│   │   ├── gazebo_ros_2Dmap_plugin            # package that contains plugin to generate map of simulated world
+│   │   ├── images 
+│   │   ├── my_robot                           # my_robot package 
+│   │   │   ├── config                         # config folder for configuration files   
+│   │   │   │   ├── base_local_planner_params.yaml
+│   │   │   │   ├── costmap_common_params.yaml
+│   │   │   │   ├── global_costmap_params.yaml
+│   │   │   │   ├── local_costmap_params.yaml
+│   │   │   ├── launch                         # launch folder for launch files  
+│   │   │   │   ├── amcl.launch                # Launches AMCL node 
+│   │   │   │   ├── robot_description.launch
+│   │   │   │   ├── world.launch               # Launches bookstore world
+│   │   │   │   ├── teleop.launch              # To drive the rosbot
+│   │   │   ├── maps                           # folder that contains maps
+│   │   │   │   ├── map_generated.pgm
+│   │   │   │   ├── map_generated.yaml
+│   │   │   ├── meshes                         # meshes folder for sensors
+│   │   │   │   ├── astra.stl
+│   │   │   │   ├── box.stl
+│   │   │   │   ├── rplidar.stl
+│   │   │   │   ├── upper.stl
+│   │   │   │   ├── wheel.stl
+│   │   │   ├── realsense2_camera              # folder that contains launch files for realsense camera
+│   │   │   ├── realsense2_description         # folder that contains description files for realsense camera
+│   │   │   ├── urdf                           # urdf folder for xarco files
+│   │   │   │   ├── materials.xacro            #contains material properties used in rosbot
+│   │   │   │   ├── my_robot.xacro             
+│   │   │   │   ├── rosbot.gazebo              #contains plugins to interact with rosbot
+│   │   │   ├── worlds                         # world folder for world files
+│   │   │   │   ├── empty.world
+│   │   │   ├── CMakeLists.txt                 # compiler instructions
+│   │   │   ├── Where-am-I.rviz                # rviz configuration
+│   │   │   ├── package.xml                    # package info
+│   │   ├── teleop_twist_keyboard              # package that contains teleop_node to control ROSbot with keyboard
+```
