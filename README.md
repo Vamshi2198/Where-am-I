@@ -27,7 +27,7 @@
 </p>
 
 ## Overview  
-This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation. ROSbot is localized using ROS AMCL (Adaptive Monte Carlo Localization) package inside a map in the simulation environment. The map is generated using [gazebo_ros_2Dmap_plugin](https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin/tree/0820610f46235cd7ce1458ea030ef83b1616da37). 
+This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation. ROSbot is localized using ROS AMCL (Adaptive Monte Carlo Localization) package inside a map in the simulation environment. The map is generated using [gazebo_ros_2Dmap_plugin](https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin). 
 There are two options to control the robot and see how it localizes in the simulation environment: 
 
 1. `2D Navigation Goal`:  
@@ -105,3 +105,53 @@ sudo apt-get install ros-(distro)-amcl
 │   │   │   ├── package.xml                    # package info
 │   │   ├── teleop_twist_keyboard              # package that contains teleop_node to control ROSbot with keyboard
 ```
+## How To Launch
+
+#### Clone the project in catkin_ws/src/ and source the environment
+```sh
+$ cd /home/workspace/catkin_ws/src/
+$ git clone https://github.com/Vamshi2198/Where-am-I
+$ source /opt/ros/(ros-distro)/setup.bash
+```
+#### Note : The world file proivided is empy because it only contains the url of remote repository, for this purpose you need to clone the aws-bookstore-world and place it inside your src folder. Also, delete the folder named aws-robomaker-bookstore-world manually before cloning.
+```sh
+$ cd /home/workspace/catkin_ws/src/
+$ git clone https://github.com/aws-robotics/aws-robomaker-bookstore-world
+```
+#### Also, repeat the same with gazebo_ros_2Dmap_plugin and teleop_twist_keyboard packages. i.e, remove the empty file folder and clone the packages
+```sh
+$ cd /home/workspace/catkin_ws/src/
+$ git clone https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin
+$ git clone https://github.com/aws-robotics/aws-robomaker-small-house-world
+```
+#### Build the `Where-am-I` project
+```sh
+$ cd /home/workspace/catkin_ws/ 
+$ catkin_make
+```
+#### After building the package, source your workspace
+```sh
+$ cd /home/workspace/catkin_ws/
+$ source devel/setup.bash
+```
+#### Launch my_robot in Gazebo
+```sh
+$ roslaunch my_robot world.launch
+```
+#### Launch amcl node 
+```sh
+$ roslaunch my_robot amcl.launch
+```
+
+## Testing
+Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to send the goal to the robot. It will start moving and localize itself in the process. if you want to use teleop_node then run :
+```sh
+$ roslaunch teleop_twist_keyboard teleop_twist_keyboard.py
+```
+The code was tested on the following specifications
+- **Processor:** `Intel Core i7-10875H`
+- **Graphics:** `Nvidia GeForce GTX 1650 Ti 4GB GDDR6`
+- **OS:** ` Ubuntu 20.04.3 LTS`
+- **Kernal:** `5.10.60.1-microsoft-standard-WSL2`
+- **ROS:** `noetic`
+
