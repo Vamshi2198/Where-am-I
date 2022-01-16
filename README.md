@@ -148,7 +148,7 @@ Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to
 ```sh
 $ roslaunch teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-The code was tested on the following specifications
+The code was tested on the following specifications:
 - **Processor:** `Intel Core i7-10875H`
 - **Graphics:** `Nvidia GeForce GTX 1650 Ti 4GB GDDR6`
 - **OS:** ` Ubuntu 20.04.3 LTS`
