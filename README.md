@@ -114,7 +114,7 @@ sudo apt-get install ros-${ROS_DISTRO}-amcl
 ```sh
 $ cd /home/workspace/catkin_ws/src/
 $ git clone https://github.com/Vamshi2198/Where-am-I
-$ source /opt/ros/(ros-distro)/setup.bash
+$ source /opt/ros/${ROS_DISTRO}/setup.bash
 ```
 #### Note : The world file proivided is empy because it only contains the url of remote repository, for this purpose you need to clone the aws-bookstore-world and place it inside your src folder. Also, delete the folder named aws-robomaker-bookstore-world manually before cloning.
 ```sh
