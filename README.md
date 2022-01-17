@@ -115,12 +115,12 @@ $ source /opt/ros/(ros-distro)/setup.bash
 ```
 #### Note : The world file proivided is empy because it only contains the url of remote repository, for this purpose you need to clone the aws-bookstore-world and place it inside your src folder. Also, delete the folder named aws-robomaker-bookstore-world manually before cloning.
 ```sh
-$ cd /home/workspace/catkin_ws/src/
+$ cd /home/workspace/catkin_ws/src/Where-am-I/src/
 $ git clone https://github.com/aws-robotics/aws-robomaker-bookstore-world
 ```
 #### Also, repeat the same with gazebo_ros_2Dmap_plugin and teleop_twist_keyboard packages. i.e, remove the empty file folder and clone the packages
 ```sh
-$ cd /home/workspace/catkin_ws/src/
+$ cd /home/workspace/catkin_ws/src/Where-am-I/src/
 $ git clone https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin
 $ git clone https://github.com/aws-robotics/aws-robomaker-small-house-world
 ```
