@@ -19,8 +19,8 @@
     <param name="initial_pose_y" value="0"/>
     
     <!-- Tune parameters-->
-    <param name="transform_tolerance" value="0.6"/>
-    <param name="min_particles" value="100"/>
+    <param name="transform_tolerance" value="0.5"/>
+    <param name="min_particles" value="90"/>
     <param name="max_particles" value="3000"/>
     <param name="update_min_a" value="pi/6.0"/>
     <param name="update_min_d" value="0.1"/>
@@ -29,11 +29,11 @@
     <param name="laser_max_beams" value="30"/>
     <param name="laser_z_hit" value="0.95"/>
     <param name="laser_z_rand" value="0.05"/>
-    <param name="odom_alpha1" value="0.02"/>
-    <param name="odom_alpha2" value="0.02"/>
-    <param name="odom_alpha3" value="0.02"/>
-    <param name="odom_alpha4" value="0.02"/>
-    <param name="odom_alpha5" value="0.02"/>
+    <param name="odom_alpha1" value="0.03"/>
+    <param name="odom_alpha2" value="0.03"/>
+    <param name="odom_alpha3" value="0.03"/>
+    <param name="odom_alpha4" value="0.03"/>
+    <param name="odom_alpha5" value="0.03"/>
   </node>
 
   <!-- Move Base -->

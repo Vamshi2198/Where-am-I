@@ -44,19 +44,19 @@ There are two options to control the robot and see how it localizes in the simul
 * ROS Kinetic  
 * ROS navigation package  
 ```
-sudo apt-get install ros-(distro)-navigation
+sudo apt-get install ros-${ROS_DISTRO}-navigation
 ```
 * ROS map_server package  
 ```
-sudo apt-get install ros-(distro)-map-server
+sudo apt-get install ros-${ROS_DISTRO}-map-server
 ```
 * ROS move_base package  
 ```
-sudo apt-get install ros-(distro)-move-base
+sudo apt-get install ros-${ROS_DISTRO}-move-base
 ```
 * ROS amcl package  
 ```
-sudo apt-get install ros-(distro)-amcl
+sudo apt-get install ros-${ROS_DISTRO}-amcl
 ```
 * make >= 4.1(mac, linux), 3.81(Windows)
   * Linux: make is installed by default on most Linux distros
