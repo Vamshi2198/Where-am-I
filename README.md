@@ -27,7 +27,7 @@
 </p>
 
 
-![](https://github.com/Vamshi2198/Go-Chase-it-/blob/main/Where-am-I-GIF.gif)
+![](https://github.com/Vamshi2198/Where-am-I/blob/main/Where-am-I-GIF.gif)
 
 ## Overview  
 This project is a part of Udacity's Robotics Software Engineer Nanodegree Program. In this project, I used [ROSbot](https://github.com/husarion/rosbot_description) as a mobile robot and [aws-robomaker-small-house-world](https://github.com/aws-robotics/aws-robomaker-small-house-world) as a gazebo world to replicate realistic simulation. ROSbot is localized using ROS AMCL (Adaptive Monte Carlo Localization) package inside a map in the simulation environment. The map is generated using [gazebo_ros_2Dmap_plugin](https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin). 
