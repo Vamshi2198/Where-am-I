@@ -143,13 +143,13 @@ $ roslaunch my_robot world.launch
 ```
 #### Launch amcl node 
 ```sh
-$ rosrun my_robot amcl.launch
+$ roslaunch my_robot amcl.launch
 ```
 
 ## Testing
 Click the `2D Nav Goal` button in the toolbar, then click and drag on the map to send the goal to the robot. It will start moving and localize itself in the process. if you want to use teleop_node then run :
 ```sh
-$ roslaunch teleop_twist_keyboard teleop_twist_keyboard.py
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 The code was tested on the following specifications:
 - **Processor:** `Intel Core i7-10875H`
