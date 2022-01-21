@@ -41,7 +41,7 @@ There are two options to control the robot and see how it localizes in the simul
 
 ## Prerequisites
 * Gazebo >= 7.0  
-* ROS Kinetic  
+* ROS >= Kinetic  
 * ROS navigation package  
 ```
 sudo apt-get install ros-${ROS_DISTRO}-navigation
