@@ -143,7 +143,7 @@ $ roslaunch my_robot world.launch
 ```
 #### Launch amcl node 
 ```sh
-$ roslaunch my_robot amcl.launch
+$ rosrun my_robot amcl.launch
 ```
 
 ## Testing
